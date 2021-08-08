@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'B612', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app{
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #f1356d;
+}
+.navLinks {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.contentBlock{
+  border:3px solid #f1356d;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.inputField{
+  margin-bottom: 5px;
+}
+.headerForm{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+    "nameInput profileImg"
+    "descriptionInput profileImg";
+  height: 200px;
+  padding: 2px;
+}
+
+.mainField{
+  font-size: 20px;
+  width: 80%;
+  height: 40px;
+}
+
+.userName{
+  grid-area: nameInput;
+}
+
+.userDecription{
+  width: 45%;
+  height: 200px;
+  grid-area: descriptionInput;
+}
+
+.userImage{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #f1356d;
+  padding: 1px;
+  float: right;
+  grid-area: profileImg;
+  place-self: center;
+}
+
+
+/* -------------------------------------EDUCATION FIELDS---------------------------------------- */
+
+.educationForm{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+.educationFormOverview{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "schoolName schoolName"
+    "additionalData fromToPeriod";
+  padding: 2px;
+}
+
+.schoolName{
+  grid-area: schoolName;
+}
+
+.additionalData{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-area: additionalData;
+}
+
+.timePeriod{
+  grid-area: fromToPeriod;
+}
+
+/* -------------------------------------END EDUCATION FIELDS---------------------------------------- */
+
+/* ----------------------------------------SKILL FIELDS--------------------------------------------- */
+
+.skillContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillItem{
+  border:1px solid #f1356d;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 5px;
+  font-size: 15px;
+
+}
+
+
+
+/* --------------------------------------END SKILL FIELDS------------------------------------------- */
