@@ -25,8 +25,8 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  margin: 5px auto;
+  border-bottom: 1px solid #c2c2c2;
 }
 
 .navbar h1 {
@@ -39,6 +39,7 @@ body {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #868585;
 }
 .navbar a:hover {
   color: #f1356d;
@@ -56,11 +57,10 @@ body {
 .headerForm{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-areas: 
     "nameInput profileImg"
     "descriptionInput profileImg";
-  height: 200px;
   padding: 2px;
 }
 
@@ -74,10 +74,9 @@ body {
   grid-area: nameInput;
 }
 
-.userDecription{
-  width: 45%;
-  height: 200px;
+.userDescription{
   grid-area: descriptionInput;
+  resize: none;
 }
 
 .userImage{
@@ -88,7 +87,7 @@ body {
   padding: 1px;
   float: right;
   grid-area: profileImg;
-  place-self: center;
+  place-self: start center;
 }
 
 

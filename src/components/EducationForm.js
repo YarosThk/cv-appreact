@@ -24,7 +24,7 @@ export default function EducationForm(props){
             <input className="inputField" type="text" name="city" placeholder="City" value={educationData.city} onChange={handleChange} required={true} />
             <input className="inputField" type="text" name="from" placeholder="From" value={educationData.from} onChange={handleChange} required={true} />
             <input className="inputField" type="text" name="to" placeholder="To" value={educationData.to} onChange={handleChange} required={true} />
-            <button onClick={handleDeleteClick} className="addFormButton">Delete</button> {/*can be component?*/}
+            <button onClick={handleDeleteClick} className="btn btn-outline-danger btn-sm">Delete</button> {/*can be component?*/}
         </form>
     )
 }

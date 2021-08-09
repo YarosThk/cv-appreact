@@ -22,7 +22,7 @@ export default function ExperienceForm(props) {
             <input className="inputField" type="text" name="company" placeholder="Company" value={experienceData.company} onChange={handleChange} required={true} />
             <input className="inputField" type="text" name="from" placeholder="From" value={experienceData.from} onChange={handleChange} required={true} />
             <input className="inputField" type="text" name="to" placeholder="To" value={experienceData.to} onChange={handleChange} required={true} />
-            <button onClick={handleDeleteClick} className="addFormButton">Delete</button>
+            <button onClick={handleDeleteClick} className="btn btn-outline-danger btn-sm">Delete</button>
         </form>
     )
 }

@@ -15,7 +15,7 @@ export default function Experience(props) {
                     return <ExperienceForm key={data.id} experienceData={data} deleteExperience={deleteExperience} updateExperience={updateExperience} />
                 })
             }
-            <button onClick={addExperienceForm} className="addFormButton">Add Experience</button>
+            <button onClick={addExperienceForm} className="btn btn-outline-danger btn-sm">Add Experience</button>
         </div>
     )
 }
