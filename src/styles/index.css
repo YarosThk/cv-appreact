@@ -66,7 +66,6 @@ body {
 
 .mainField{
   font-size: 20px;
-  width: 80%;
   height: 40px;
 }
 
@@ -90,16 +89,18 @@ body {
   place-self: start center;
 }
 
-
-/* -------------------------------------EDUCATION FIELDS---------------------------------------- */
-
-.educationForm{
+.dataForm{
   display: flex;
   flex-flow: column wrap;
   padding: 2px;
   margin-bottom: 10px;
 }
 
+.btn:hover{
+  color: aliceblue !important;
+}
+
+/* -------------------------------------EDUCATION FIELDS---------------------------------------- */
 .educationFormOverview{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -125,6 +126,10 @@ body {
   grid-area: fromToPeriod;
 }
 
+.educationDate{
+  width: 20%;
+}
+
 /* -------------------------------------END EDUCATION FIELDS---------------------------------------- */
 
 /* ----------------------------------------SKILL FIELDS--------------------------------------------- */
@@ -135,7 +140,7 @@ body {
 }
 
 .skillItem{
-  border:1px solid #f1356d;
+  border: 1px solid #f1356d;
   border-radius: 3px;
   margin: 3px;
   padding: 5px;
@@ -143,6 +148,10 @@ body {
 
 }
 
-
-
 /* --------------------------------------END SKILL FIELDS------------------------------------------- */
+
+/* --------------------------------------MEDIA QUERIES------------------------------------------- */
+
+
+
+/* --------------------------------------END MEDIA QUERIES------------------------------------------- */

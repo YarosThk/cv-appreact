@@ -13,7 +13,7 @@ export default function Education(props){
                     return <EducationForm key={data.id} educationData={data} deleteEducation={props.deleteEducation} updateEducation={props.updateEducation}/>
                 })
             }
-            <button onClick={addEducationForm} className="btn btn-outline-danger btn-sm">Add Education</button> {/*can be component?*/}
+            <button onClick={addEducationForm} className="btn btn-outline-info btn-sm">Add Education</button> {/*can be component?*/}
         </div>
     )
 }

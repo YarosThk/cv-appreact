@@ -13,8 +13,8 @@ import { v1 as uuidv1 } from 'uuid';
 
 function App() {
   const [description, setDescription] = useState({
-    fullname : "Full Name",
-    about : "About yourself",
+    fullname : "",
+    about : "",
     profileImg: profilePic
   })
 
@@ -77,7 +77,6 @@ function App() {
   }
 
   function updateExperience(id, toChange, newValue){
-    console.log(id, toChange, newValue)
     setExperience(
       experience.map(exp => {return exp.id === id ? { ...exp, [toChange]: newValue } : exp })
     )
